@@ -40,7 +40,7 @@ INCENTIVE_AMT int,PRIMARY KEY(insentive_id),FOREIGN KEY(EMPLOYEE_REF_ID) REFEREN
 
 a) SELECT FIRST_NAME as "Employee Name" FROM employee
 b) SELECT FIRST_NAME,JOINING_DATE FROM employee
-c) baki che.....SELECT * FROM employee order by SALARY DESC,FIRST_NAME ASC // Whenever click after that change it
+c) SELECT * FROM employee order by FIRST_NAME ASC,SALARY DESC // Whenever click after that change it
 d) SELECT * FROM employee WHERE FIRST_NAME LIKE 'o%'
 e) SELECT * FROM employee WHERE JOINING_DATE LIKE '%%%%-01-%%'
 f) SELECT DEPARTMENT,SUM(SALARY) TOTAL_SALARY FROM EMPLOYEE GROUP BY DEPARTMENT;
@@ -103,7 +103,7 @@ INSERT INTO `order` (`ONM`, `AMT`, `ODE`, `CNM`, `SNO`) VALUES ('3011', '3011', 
 
 ******************Query ***********************************
 
-a) baki che.....SELECT * FROM order_tbl WHERE AMT>1000 
+a) SELECT * FROM order_tbl WHERE AMT>1000 
 b) SELECT SNAME,CITY,COMM FROM sales_person WHERE CITY='LONDON' AND COMM>0.10
 c) SELECT * FROM sales_person
    WHERE CITY='BARCELONA' OR CITY='LONDON'
